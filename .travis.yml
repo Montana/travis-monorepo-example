@@ -3,6 +3,7 @@ language: generic
 sudo: false
 
 matrix:
+  fast_finish: true
     include:
         - env: PROJECT=projects/projectA
         - env: PROJECT=projects/projectB
