@@ -6,5 +6,7 @@ matrix:
     include:
         - env: PROJECT=projects/projectA
         - env: PROJECT=projects/projectB
+        - env: PROJECT=projects/projectC
+
 
 script: if .travis/build-condition.sh $TRAVIS_COMMIT_RANGE $PROJECT; then echo "$PROJECT is being built"; else echo "$PROJECT is NOT being built"; fi
